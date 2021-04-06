@@ -1,0 +1,539 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*-----------------------------------HUSBAND---------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.top_screen_1 {
+  position: relative;
+  background: black;
+  height: 15vh;
+  width: 100vw;
+  float: top;
+  overflow: hidden;
+  display: block;
+}
+
+.work1 {
+  display: flex; /*flex */
+  background: black;
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  font-size: 2vw;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  letter-spacing: 2px;
+
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0px;
+}
+
+.headingSep {
+  color: #6c63ff;
+  background: #3f3d56;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0px;
+}
+
+.work2 {
+  display: flex; /*flex */
+  background: black;
+  float: right;
+  height: 100%;
+  width: 50%;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  color: #bdbdbd;
+  cursor: pointer;
+  font-size: 1.2vw;
+  text-decoration: none;
+  margin: 20vw 0;
+
+  padding: 10px 25px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before {
+  background: #6c63ff;
+  content: "";
+  position: absolute;
+  border-radius: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn1 {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.btn1:hover {
+  color: white;
+  z-index: 1;
+}
+.btn1::before {
+  content: "";
+  width: 0%;
+  height: 70%;
+}
+.btn1:hover::before {
+  content: "";
+  width: 70%;
+}
+
+.userSign {
+  margin: 0;
+  width: 10vw;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: white;
+  text-align: center;
+  margin-left: 9vw;
+  border-bottom: solid #585858 0.2vw;
+  font-size: 1.1vw;
+}
+.userPssd {
+  margin: 0;
+  width: 10vw;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #6c63ff;
+  margin-left: 2.5vw;
+  background: transparent;
+  border-bottom: solid #585858 0.2vw;
+  font-size: 1.1vw;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*-----------------------------------SCREEN 1---------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.screen_1 {
+  position: absolute;
+  background: #091921;
+  height: 85vh;
+  width: 100vw;
+  display: block;
+}
+
+.child1 {
+  background: rgba(255, 255, 255, 0);
+  float: left;
+  height: 100%;
+  width: 59%;
+  overflow: hidden;
+  display: block;
+  padding-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  width: 70%;
+  height: 60%;
+  margin-top: -20vh;
+  border-radius: 1vw;
+  margin-left: -3vw;
+  padding: 1vw;
+  color: white;
+  font-size: 1.3vw;
+  font-family: "Rubik Mono One", sans-serif;
+}
+, 
+.home h3 {
+  color: #6c63ff;
+  font-family: "Comfortaa", cursive;
+  margin-left: 6vw;
+  margin-top: 0;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*-----------------------------------Child2---------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+.child2 {
+  background: rgba(255, 255, 255, 0);
+  float: right;
+  height: 100%;
+  width: 41%;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+/*------------------------------------------------register_text---------------------------------------------*/
+.register_text h1 {
+  display: inline;
+  font-size: 6vw;
+  color: white;
+  cursor: default;
+  font-family: "Rubik Mono One", sans-serif;
+}
+.register_text h1:after {
+  content: "it's free";
+  font-size: 3vw;
+  cursor: default;
+}
+/*---------------------XXXX---------------------------register_text----------------XXXX-----------------------------*/
+
+/*-------------------------------------------Register_form--------------------------------------------------*/
+.register_form {
+  background: rgba(0, 0, 0, 0.2);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  height: auto;
+  width: 95%;
+  height: 68vh;
+  border-radius: 1vw;
+  overflow: hidden;
+  margin-top: 1vh;
+  margin-left: 0vw;
+  margin-bottom: 1vh;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  color: #9db7d0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  width: 80%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin: 0.8vw;
+}
+.form input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  font-size: 1.5vw;
+  color: white;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 2px solid #606163;
+  color: #585858;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #6c63ff;
+  left: -0.5px;
+  bottom: -2px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #6c63ff;
+  font-weight: bold;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+/*----------------XXXX---------------------------Register_form-----------------------XXXX---------------------------*/
+
+/*-------------------------------------------Register_form_date--------------------------------------------------*/
+.form1 {
+  width: 80%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin: 0.8vw;
+  background: transparent;
+}
+.form1 input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  font-size: 1.5vw;
+  color: white;
+}
+.form1 label {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 2px solid #606163;
+  color: #585858;
+}
+.form1 label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #6c63ff;
+  left: -0.5px;
+  bottom: -2px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name1 {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.content-name1::after {
+  content: " \00a0 (MM/DD/YYYY)";
+  bottom: 3px;
+  color: #606163;
+  position: absolute;
+  transition: all 0.5s ease;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+
+.form1 input:focus + .label-name1 .content-name1,
+.form1 input:valid + .label-name1 .content-name1 {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #6c63ff;
+  font-weight: bold;
+}
+.form1 input:focus + .label-name1::after,
+.form1 input:valid + .label-name1::after {
+  transform: translateX(0%);
+}
+/*---------------------------XXXX----------------Register_form_date----------XXXX----------------------------------------*/
+
+/*-------------------------------------------Register_form_gender--------------------------------------------------*/
+.container_gender {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.container_gender label {
+  position: relative;
+}
+.container_gender label input {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.container_gender label .fa {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #091921;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 4px;
+  color: #6f6f6f;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 1);
+}
+.container_gender label .fa:hover {
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 1), inset -2px -2px 10px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.container_gender label input:checked ~ .fa {
+  color: #3e34ff;
+  box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 1);
+}
+/*----------------------------XXXX---------------Register_form_gender----------XXXX----------------------------*/
+
+/*-----------------------------------------------Register_form_button----------------------------------------*/
+.btn_reg {
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  color: #bdbdbd;
+  font-size: 1.2vw;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  margin: 2vh 0;
+  border: 3px solid #6c63ff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.btn_reg::before {
+  background: #6c63ff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn1_reg {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.btn1_reg:hover {
+  color: white;
+  z-index: 1;
+}
+.btn1_reg::before {
+  content: "";
+  width: 0%;
+  height: 70%;
+}
+.btn1_reg:hover::before {
+  content: "";
+  width: 70%;
+}
+/*----------------------------XXXX---------------Register_form_button----------XXXX------------------------------------*/
+
+/*-----------------------------------------------Register_form_javascript----------------------------------------------*/
+#register_form_doctor {
+  display: none;
+}
+#register_form_hospital {
+  display: none;
+}
+#register_form_patient {
+  display: flex;
+}
+/*----------------------------XXXX---------------Register_form_javascript----------XXXX------------------------*/
+
+/*-----------------------------------------------Register_form_for_Separated_by_commas------------------------------------*/
+.form12 {
+  width: 80%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin: 0.8vw;
+}
+.form12 input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  font-size: 1.5vw;
+  color: white;
+}
+.form12 label {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 2px solid #606163;
+  color: #a4ebe7;
+}
+.form12 label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #a4ebe7;
+  left: -0.5px;
+  bottom: -2px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name12 {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.content-name12::after {
+  content: " \00a0 (Separated_by_commas)";
+  bottom: 3px;
+  color: #606163;
+  position: absolute;
+  transition: all 0.5s ease;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.form12 input:focus + .label-name12 .content-name12,
+.form12 input:valid + .label-name12 .content-name12 {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #e91e63;
+  font-weight: bold;
+}
+.form12 input:focus + .label-name1::after,
+.form12 input:valid + .label-name1::after {
+  transform: translateX(0%);
+}
+/*------------------------XXXX---------Register_form_for_Separated_by_commas----------------XXXX------------------------*/
+
+/*-----------------------------------------------Register_form_for_Radio_button (govt hos)-------------------------------*/
+#government_hospital {
+  color: #a4ebe7;
+  margin-left: -6vw;
+  /*margin-right: 5.8vw;*/
+}
+/*-----------------------------XXXX------------------Register_form_for_Radio_button (govt hos)----------XXXX-------------*/

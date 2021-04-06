@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.top_screen_1 {
+  position: relative;
+  background: black;
+  height: 15vh;
+  width: 100vw;
+  float: top;
+  overflow: hidden;
+  display: block;
+}
+
+.work1 {
+  display: flex; /*flex */
+  background: black;
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  font-size: 2vw;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  letter-spacing: 2px;
+
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0px;
+}
+
+.headingSep {
+  color: #6c63ff;
+  background: #3f3d56;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0px;
+}
+
+.work2 {
+  display: flex; /*flex */
+  background: rgb(0, 0, 0);
+  float: right;
+  height: 100%;
+  width: 40%;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  align-items: center;
+  color: #585858;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.userNameWelcome {
+  color: #6c63ff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5vw;
+  font-weight: bolder;
+  margin-top: 1vh;
+}
+
+.bottom {
+  width: 100vw;
+  height: 100vh;
+  background: #091921;
+  display: flex;
+}
+.bottomSec1 {
+  z-index: 20;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapContainer {
+  z-index: 25;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px;
+}
+.circle1 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 38vmin;
+  height: 38vmin;
+  /* width: 300px;
+    height: 300px; */
+  background: linear-gradient(
+    300deg,
+    rgba(0, 78, 146, 1) 0%,
+    rgba(0, 4, 40, 1) 100%
+  );
+
+  border-radius: 50%;
+}
+.circle2 {
+  position: absolute;
+  top: 40.5%;
+  left: 70%;
+  width: 25vmin;
+  height: 25vmin;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 166, 158, 1) 0%,
+    rgba(134, 22, 87, 1) 100%
+  );
+
+  border-radius: 50%;
+}
+.circle3 {
+  position: absolute;
+  top: 78%;
+  left: 13%;
+  width: 34vmin;
+  height: 34vmin;
+  /* width: 270px;
+    height: 270px; */
+  background: linear-gradient(
+    300deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 94, 0, 1) 45%,
+    rgba(255, 239, 0, 1) 100%
+  );
+
+  border-radius: 50%;
+}
+.circle4 {
+  position: absolute;
+  top: 59%;
+  left: 44%;
+  width: 39vmin;
+  height: 39vmin;
+  /* width: 310px;
+    height: 310px; */
+  background: linear-gradient(
+    90deg,
+    rgba(240, 0, 0, 1) 0%,
+    rgba(240, 0, 89, 1) 50%,
+    rgba(240, 0, 178, 1) 100%
+  );
+  border-radius: 50%;
+}
+.circle5 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 21vmin;
+  height: 21vmin;
+  /* width: 170px;
+    height: 170px; */
+  background: linear-gradient(
+    90deg,
+    rgba(254, 133, 133, 1) 0%,
+    rgba(108, 67, 255, 1) 100%
+  );
+
+  border-radius: 50%;
+}
+.circle6 {
+  position: absolute;
+  top: 83%;
+  left: 80%;
+  width: 31vmin;
+  height: 31vmin;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 153, 142, 1) 0%,
+    rgba(56, 239, 125, 1) 100%
+  );
+
+  border-radius: 50%;
+}
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  border: solid 0.2vw transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  transition: 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 50%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  border: solid 0.2vw transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  transition: 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.cardIcon {
+  width: 100%;
+  height: 35%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  justify-content: center;
+}
+.cardIcon img {
+  width: auto;
+  height: 100%;
+}
+.cardDetails {
+  width: 100%;
+  margin: 0;
+  height: 45%;
+}
+.hotelIdP,
+.hotelRatingP {
+  font-family: "Roboto", sans-serif;
+  color: #b1b1b1;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.cardDetails p {
+  font-size: 1.3vw;
+  margin: 1vh;
+}
+.hotelNameValue {
+  font-size: 1.2vw;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.hotelNameA {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+.hotelNameA:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+.hotelIdValue {
+  font-size: 1.2vw;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: context-menu;
+  letter-spacing: 2px;
+}
+.hotelRatingValue {
+  font-size: 1.2vw;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: context-menu;
+  letter-spacing: 2px;
+}
+
+.cardBookButton {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardBookButton button {
+  outline: none;
+  border: none;
+  width: 30%;
+  height: 70%;
+  color: #6c63ff;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  border: solid 0.3vw #ffffff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  background-color: none;
+}
+.cardBookButton button a {
+  color: white;
+  text-decoration: none;
+}
+.cardBookButton button:hover {
+  transform: scale(1.1);
+}
+.back {
+  position: absolute;
+  left: 2vw;
+  top: 17vh;
+  background: transparent;
+  color: #6c63ff;
+  border: none;
+  outline: none;
+  font-size: 2vw;
+  border-radius: 50%;
+  border: solid 0.2vw white;
+  transition: 0.3s ease;
+}
+.back:hover {
+  border: solid 0.2vw #6c63ff;
+  color: white;
+}
+.back a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+.back a:hover {
+  color: white;
+}
